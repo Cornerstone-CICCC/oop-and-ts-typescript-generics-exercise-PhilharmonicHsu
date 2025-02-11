@@ -3,9 +3,10 @@
 // Define an object of type `Data` where `value` is a string "Generic" and `id` is 1.
 // Log the object.
 
-interface Data {
-  
+interface Data<T> {
+  id: number,
+  value: T
 }
 
-const data: Data = { id: 1, value: "Generic" };
+const data: Data<string> = { id: 1, value: "Generic" };
 console.log(data); // Expected output: { id: 1, value: "Generic" }
