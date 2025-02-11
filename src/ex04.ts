@@ -3,15 +3,15 @@
 // Initialize it with "Initial Value", update it to "Updated Value", and log the new value.
 
 class Container {
-  private value;
+  private value: T;
 
-  constructor(value) {
+  constructor(value: T) {
     this.value = value;
   }
 
-  getValue = () => this.value;
+  getValue = (): T => this.value;
 
-  setValue = (value) => {
+  setValue = (value): void => {
     this.value = value;
   };
 }
