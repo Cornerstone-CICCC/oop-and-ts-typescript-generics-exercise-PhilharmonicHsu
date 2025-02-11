@@ -2,6 +2,6 @@
 // and returns the first element of the array. 
 // Pass an array of strings ["Hello", "World"] and log the result.
 
-const getFirstElement = <string>(arr: string[]) => arr[0];
+const getFirstElement = <T>(arr: T[]) => arr[0];
 
 console.log(getFirstElement(["Hello", "World"])); // Expected output: "Hello"
